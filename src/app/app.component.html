@@ -1,7 +1,7 @@
 <div>
 <label> Student Number </label> <input type = "text" [(ngModel)]="studNo"><br>
 <label> Student First Name </label> <input type = "text" [(ngModel)]="studFname"><br>
-<label> Student Last Name </label> <input type = "text" [(ngModel)]="studLName"><br>
+<label> Student Last Name </label> <input type = "text" [(ngModel)]="studLname"><br>
 <label> Student Program </label> <input type = "text" [(ngModel)]="studProg"><br>
 <label> Student Year </label> <input type = "text" [(ngModel)]="studYr"><br>
 </div>
@@ -30,11 +30,11 @@ List Students
 </thead>
 <tbody>
 <tr *ngFor = "let studentRecord of studentCollection">
-<td>{{ student.Record.studNumber}} </td>
-<td>{{studentRecored.studFirstName}} </td>
-<td>{{studentRecored.studLastName}} </td>
-<td>{{studentRecored.studProgram}} </td>
-<td>{{studentRecored.studFirstYear}} </td>
+<td>{{studentRecord.studNumber}} </td>
+<td>{{studentRecord.studFirstName}} </td>
+<td>{{studentRecord.studLastName}} </td>
+<td>{{studentRecord.studProgram}} </td>
+<td>{{studentRecord.studYear}} </td>
 </tr>
 </tbody>
 </table>
